@@ -89,6 +89,11 @@ body {
   background: #edece4;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 .cor-pm {
   color: #cbc6b9;
 }
@@ -128,6 +133,5 @@ body {
 }
 
 .img-restaurante img {
-  display: block;
   width: 100%;
 }
