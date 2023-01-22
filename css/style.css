@@ -123,11 +123,11 @@ img {
 }
 
 .f-1 {
-  font: 400 1.5rem/1.6rem "PT Mono", monospace;
+  font: 400 1.2rem/1.6rem "PT Mono", monospace;
 }
 
 .f-2 {
-  font: 400 1.8rem/1.25rem "Aref Ruqaa", serif;
+  font: 400 1.3rem/1.25rem "Aref Ruqaa", serif;
 }
 
 .info {
@@ -150,4 +150,19 @@ img {
 
 .img-restaurante img {
   width: 100%;
+}
+
+.cardapio h3 {
+  margin-bottom: 40px;
+}
+
+.cardapio ul li {
+  display: flex;
+  gap: 10px;
+  font: 400 1.2rem/1.6rem "PT Mono", monospace;
+  margin-bottom: 10px;
+}
+
+.cardapio ul li span {
+  font: 400 1.3rem/1.25rem "Aref Ruqaa", serif;
 }
