@@ -56,3 +56,19 @@ table {
   width: min(100% - 40px, 1200px);
   margin-inline: auto;
 }
+
+.grid-5-7 {
+  display: grid;
+  justify-content: center;
+  align-items: start;
+  grid-template-columns: 5fr 7fr;
+  gap: 20px;
+}
+
+.grid-main-1 {
+  display: grid;
+  justify-content: start;
+  align-items: end;
+  grid-template-columns: 1fr;
+  gap: 80px;
+}
