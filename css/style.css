@@ -85,20 +85,6 @@ body {
   background: #edece4;
 }
 
-.info {
-  margin-right: 30%;
-  border-right: 2px solid #2a2426;
-}
-
-.info li:nth-child(2) {
-  padding-bottom: 20px;
-  border-bottom: 2px solid #2a2426;
-}
-
-.info li:nth-child(3), .info li:last-child {
-  padding-top: 20px;
-}
-
 .cor-pm {
   color: #cbc6b9;
 }
@@ -117,4 +103,18 @@ body {
 
 .f-2 {
   font: 400 1.8rem/1.25rem "Aref Ruqaa", serif;
+}
+
+.info {
+  margin-right: 30%;
+  border-right: 2px solid #2a2426;
+}
+
+.info li:nth-child(2) {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #2a2426;
+}
+
+.info li:nth-child(3), .info li:last-child {
+  padding-top: 20px;
 }
