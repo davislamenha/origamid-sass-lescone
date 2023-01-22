@@ -72,3 +72,11 @@ table {
   width: min(100% - 40px, 1200px);
   margin-inline: auto;
 }
+
+.borda-media {
+  border: 10px solid #cbc6b9;
+}
+
+body {
+  background: #edece4;
+}
