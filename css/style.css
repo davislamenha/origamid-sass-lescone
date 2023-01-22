@@ -85,6 +85,10 @@ table {
   border-radius: 50%;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .pt-60 {
   padding-top: 60px;
 }
