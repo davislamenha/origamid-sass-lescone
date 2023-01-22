@@ -80,6 +80,22 @@ table {
   gap: 40px;
 }
 
+.grid-formulario {
+  display: grid;
+  justify-content: start;
+  align-items: end;
+  grid-template-columns: 1fr;
+  gap: 5px;
+}
+
+.grid-formulario-2 {
+  display: grid;
+  justify-content: start;
+  align-items: start;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
 .container {
   width: min(100% - 40px, 1200px);
   margin-inline: auto;
@@ -129,7 +145,6 @@ img {
   display: flex;
   align-items: center;
 }
-
 .titulo::after {
   content: "";
   position: absolute;
@@ -139,7 +154,6 @@ img {
   background: #2a2426;
   right: 20%;
 }
-
 #contato .titulo::after {
   width: 45%;
 }
@@ -203,4 +217,46 @@ img {
 .img-menu {
   align-self: end;
   justify-self: center;
+}
+
+#contato form .flex-formulario {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+#contato form input, #contato form textarea {
+  font: 400 1.2rem/1.6rem "PT Mono", monospace;
+  color: #2a2426;
+  height: 30px;
+  padding-block: 5px;
+  border: 2px solid #988c77;
+  background: transparent;
+  margin-bottom: 10px;
+}
+#contato form input:hover, #contato form input:focus, #contato form textarea:hover, #contato form textarea:focus {
+  outline: none;
+  border-color: #cbc6b9;
+}
+#contato form textarea {
+  height: 150px;
+}
+
+.btn-submit {
+  display: block;
+  background: transparent;
+  cursor: pointer;
+  font: 400 1.2rem/1.6rem "PT Mono", monospace;
+  text-transform: uppercase;
+  color: #988c77;
+  border: 2px solid #988c77;
+  padding-inline: 80px;
+  box-shadow: rgb(203, 198, 185) 5px 5px 0px -2px, rgb(152, 140, 119) 5px 5px 0px 0px;
+  transition: 0.3s all;
+}
+.btn-submit:hover {
+  box-shadow: rgb(203, 198, 185) 2px 2px 0px -2px, rgb(152, 140, 119) 2px 2px 0px 0px;
+}
+
+#contato img {
+  width: 100%;
 }
