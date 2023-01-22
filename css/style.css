@@ -126,6 +126,10 @@ img {
   max-width: 100%;
 }
 
+.cor-pc {
+  color: #edece4;
+}
+
 .cor-pm {
   color: #cbc6b9;
 }
@@ -259,4 +263,15 @@ img {
 
 #contato img {
   width: 100%;
+}
+
+footer {
+  margin-top: 60px;
+  background: #2a2426;
+  padding-block: 20px;
+  box-shadow: rgb(42, 36, 38) 0px 0px 0px 10px;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
 }
