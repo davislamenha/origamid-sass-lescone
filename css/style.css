@@ -96,3 +96,11 @@ body {
 .cor-pm-2 {
   color: #2a2426;
 }
+
+.f-1 {
+  font: 400 1.125rem/1.6rem "PT Mono", monospace;
+}
+
+.f-2 {
+  font: 400 1.5rem/1.25rem "Aref Ruqaa", serif;
+}
