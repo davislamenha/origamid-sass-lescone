@@ -72,6 +72,14 @@ table {
   gap: 80px;
 }
 
+.grid-cardapio {
+  display: grid;
+  justify-content: start;
+  align-items: start;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
 .container {
   width: min(100% - 40px, 1200px);
   margin-inline: auto;
