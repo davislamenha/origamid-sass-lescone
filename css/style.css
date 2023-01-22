@@ -152,7 +152,13 @@ img {
   width: 100%;
 }
 
+#menu h1 {
+  font-size: 2rem;
+}
+
 .cardapio h3 {
+  font: 400 1.3rem/1.25rem "Aref Ruqaa", serif;
+  font-size: 2rem;
   margin-bottom: 40px;
 }
 
@@ -165,4 +171,18 @@ img {
 
 .cardapio ul li span {
   font: 400 1.3rem/1.25rem "Aref Ruqaa", serif;
+  color: #988c77;
+}
+
+.cardapio .entradas li span {
+  margin-left: -70px;
+}
+
+.cardapio .pratos-principais li span {
+  margin-left: -80px;
+}
+
+.img-menu {
+  align-self: end;
+  justify-self: center;
 }
