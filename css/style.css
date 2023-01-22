@@ -126,3 +126,8 @@ body {
 .detalhe span {
   font-size: 18rem;
 }
+
+.img-restaurante img {
+  display: block;
+  width: 100%;
+}
