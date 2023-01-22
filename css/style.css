@@ -81,6 +81,10 @@ table {
   border: 10px solid #cbc6b9;
 }
 
+.borda-redonda {
+  border-radius: 50%;
+}
+
 .pt-60 {
   padding-top: 60px;
 }
