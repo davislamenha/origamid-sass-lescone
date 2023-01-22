@@ -122,3 +122,7 @@ body {
 .info li:nth-child(3), .info li:last-child {
   padding-top: 20px;
 }
+
+.detalhe span {
+  font-size: 18rem;
+}
