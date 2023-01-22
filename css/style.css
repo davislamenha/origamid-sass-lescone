@@ -77,6 +77,10 @@ table {
   border: 10px solid #cbc6b9;
 }
 
+.pt-60 {
+  padding-top: 60px;
+}
+
 body {
   background: #edece4;
 }
