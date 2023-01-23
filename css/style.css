@@ -159,6 +159,20 @@ body img {
   margin-right: 30%;
   border-right: 2px solid #2a2426;
 }
+#intro .info li:first-child {
+  position: relative;
+}
+#intro .info li:first-child::after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  background: #1ab912;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 15%;
+  right: 35%;
+}
 #intro .info li:nth-child(2) {
   padding-bottom: 20px;
   border-bottom: 2px solid #2a2426;
