@@ -184,7 +184,7 @@ body img {
   font-size: 20rem;
 }
 #intro .img-restaurante img {
-  width: 100%;
+  width: min(100% - 20px, 100%);
 }
 
 #menu .cardapio h3 {
