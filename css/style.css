@@ -140,6 +140,14 @@ table {
   grid-template-columns: 1fr 1fr;
   gap: 5px 20px;
 }
+@media (max-width: 600px) {
+  .grid-formulario-2 {
+    grid-template-columns: 1fr;
+  }
+  .grid-formulario-2 label:nth-child(2) {
+    grid-row: 3;
+  }
+}
 
 body {
   background: #edece4;
@@ -311,6 +319,8 @@ body img {
 #contato form .flex-formulario {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
   margin-bottom: 40px;
 }
 #contato form .flex-formulario .btn-submit {
@@ -328,9 +338,21 @@ body img {
 #contato form .flex-formulario .btn-submit:hover {
   box-shadow: rgb(203, 198, 185) 2px 2px 0px -2px, rgb(152, 140, 119) 2px 2px 0px 0px;
 }
+@media (max-width: 600px) {
+  #contato form .flex-formulario .btn-submit {
+    align-self: start;
+    padding-block: 10px;
+  }
+}
+@media (max-width: 600px) {
+  #contato form .flex-formulario {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+}
 
 #contato img {
-  width: 100%;
+  width: min(100% - 20px, 100%);
 }
 
 footer {
