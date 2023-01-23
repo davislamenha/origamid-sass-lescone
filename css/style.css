@@ -106,6 +106,24 @@ table {
   grid-template-columns: 1fr 1fr;
   gap: 40px;
 }
+@media (max-width: 800px) {
+  .grid-cardapio {
+    display: grid;
+    justify-content: start;
+    align-items: start;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .grid-cardapio {
+    display: grid;
+    justify-content: start;
+    align-items: start;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
 
 .grid-formulario {
   display: grid;
@@ -173,6 +191,11 @@ body .titulo::after {
   background: #2a2426;
   bottom: 0;
   right: 0;
+}
+@media (max-width: 800px) {
+  body .titulo {
+    margin-bottom: 30px;
+  }
 }
 body .pt-60 {
   padding-top: 60px;
@@ -252,9 +275,21 @@ body img {
 #menu .cardapio .pratos-principais li span {
   margin-left: -80px;
 }
+@media (max-width: 800px) {
+  #menu .cardapio .entradas li span, #menu .cardapio .pratos-principais li span {
+    margin-left: 0px;
+  }
+}
 #menu .img-menu {
   align-self: end;
   justify-self: center;
+  width: min(80% - 20px, 100%);
+}
+@media (max-width: 800px) {
+  #menu .img-menu {
+    align-self: center;
+    justify-self: start;
+  }
 }
 
 #contato form input, #contato form textarea {
