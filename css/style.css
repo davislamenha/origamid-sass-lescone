@@ -63,6 +63,24 @@ table {
   grid-template-columns: 5fr 7fr;
   gap: 20px;
 }
+@media (max-width: 1200px) {
+  .grid-5-7 {
+    display: grid;
+    justify-content: center;
+    align-items: start;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .grid-5-7 {
+    display: grid;
+    justify-content: center;
+    align-items: start;
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+}
 
 .grid-main-1 {
   display: grid;
@@ -70,6 +88,15 @@ table {
   align-items: end;
   grid-template-columns: 1fr;
   gap: 80px;
+}
+@media (max-width: 800px) {
+  .grid-main-1 {
+    display: grid;
+    justify-content: start;
+    align-items: end;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
 }
 
 .grid-cardapio {
@@ -150,6 +177,11 @@ body .titulo::after {
 body .pt-60 {
   padding-top: 60px;
 }
+@media (max-width: 800px) {
+  body .pt-60 {
+    padding-top: 30px;
+  }
+}
 body img {
   display: block;
   max-width: 100%;
@@ -159,11 +191,12 @@ body img {
   margin-right: 30%;
   border-right: 2px solid #2a2426;
 }
-#intro .info li:first-child {
-  position: relative;
+#intro .info li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 #intro .info li:first-child::after {
-  position: absolute;
   display: inline-block;
   content: "";
   background: #1ab912;
@@ -180,8 +213,19 @@ body img {
 #intro .info li:nth-child(3), #intro .info li:last-child {
   padding-top: 20px;
 }
+@media (max-width: 1200px) {
+  #intro .info {
+    margin-right: 0;
+    border: none;
+  }
+}
 #intro .detalhe span {
   font-size: 20rem;
+}
+@media (max-width: 1200px) {
+  #intro .detalhe span {
+    display: none;
+  }
 }
 #intro .img-restaurante img {
   width: min(100% - 20px, 100%);
