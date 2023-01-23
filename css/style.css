@@ -96,60 +96,48 @@ table {
   gap: 20px;
 }
 
-.container {
-  width: min(100% - 40px, 1200px);
-  margin-inline: auto;
-}
-
-.borda-media {
-  border: 10px solid #cbc6b9;
-}
-
-.borda-redonda {
-  border-radius: 50%;
-}
-
-.uppercase {
-  text-transform: uppercase;
-}
-
-.pt-60 {
-  padding-top: 60px;
-}
-
 body {
   background: #edece4;
 }
-
-img {
-  display: block;
-  max-width: 100%;
+body .container {
+  width: min(100% - 40px, 1200px);
+  margin-inline: auto;
 }
-
-.cor-pc {
+body .borda-media {
+  border: 10px solid #cbc6b9;
+}
+body .borda-redonda {
+  border-radius: 50%;
+}
+body .cor-pc {
   color: #edece4;
 }
-
-.cor-pm {
+body .cor-pm {
   color: #cbc6b9;
 }
-
-.cor-pe {
+body .cor-pe {
   color: #988c77;
 }
-
-.cor-pe-2 {
+body .cor-pe-2 {
   color: #2a2426;
 }
-
-.titulo {
+body .uppercase {
+  text-transform: uppercase;
+}
+body .f-1 {
+  font: 400 1.2rem/1.6rem "PT Mono", monospace;
+}
+body .f-2 {
+  font: 400 1.3rem/1.25rem "Aref Ruqaa", serif;
+}
+body .titulo {
   position: relative;
   font: 400 1.2rem/1.6rem "PT Mono", monospace;
-  font-size: 2rem;
+  font-size: rem(32);
   display: flex;
   align-items: center;
 }
-.titulo::after {
+body .titulo::after {
   content: "";
   position: absolute;
   display: inline-block;
@@ -158,76 +146,61 @@ img {
   background: #2a2426;
   right: 20%;
 }
-#contato .titulo::after {
+body .titulo::after {
   width: 45%;
 }
-
-.f-1 {
-  font: 400 1.2rem/1.6rem "PT Mono", monospace;
+body .pt-60 {
+  padding-top: 60px;
+}
+body img {
+  display: block;
+  max-width: 100%;
 }
 
-.f-2 {
-  font: 400 1.3rem/1.25rem "Aref Ruqaa", serif;
-}
-
-.info {
+#intro .info {
   margin-right: 30%;
   border-right: 2px solid #2a2426;
 }
-
-.info li:nth-child(2) {
+#intro .info li:nth-child(2) {
   padding-bottom: 20px;
   border-bottom: 2px solid #2a2426;
 }
-
-.info li:nth-child(3), .info li:last-child {
+#intro .info li:nth-child(2) #intro .info li:nth-child(3), #intro .info li:last-child {
   padding-top: 20px;
 }
-
-.detalhe span {
+#intro .detalhe span {
   font-size: 20rem;
 }
-
-.img-restaurante img {
+#intro .img-restaurante img {
   width: 100%;
 }
 
-.cardapio h3 {
+#menu .cardapio h3 {
   font: 400 1.3rem/1.25rem "Aref Ruqaa", serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 40px;
 }
-
-.cardapio ul li {
+#menu .cardapio ul li {
   display: flex;
   gap: 10px;
   font: 400 1.2rem/1.6rem "PT Mono", monospace;
   margin-bottom: 10px;
 }
-
-.cardapio ul li span {
+#menu .cardapio ul li span {
   font: 400 1.3rem/1.25rem "Aref Ruqaa", serif;
   color: #988c77;
 }
-
-.cardapio .entradas li span {
+#menu .cardapio .entradas li span {
   margin-left: -70px;
 }
-
-.cardapio .pratos-principais li span {
+#menu .cardapio .pratos-principais li span {
   margin-left: -80px;
 }
-
-.img-menu {
+#menu .img-menu {
   align-self: end;
   justify-self: center;
 }
 
-#contato form .flex-formulario {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 40px;
-}
 #contato form input, #contato form textarea {
   font: 400 1.2rem/1.6rem "PT Mono", monospace;
   color: #2a2426;
@@ -244,8 +217,12 @@ img {
 #contato form textarea {
   height: 150px;
 }
-
-.btn-submit {
+#contato form .flex-formulario {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+#contato form .flex-formulario .btn-submit {
   display: block;
   background: transparent;
   cursor: pointer;
@@ -257,7 +234,7 @@ img {
   box-shadow: rgb(203, 198, 185) 5px 5px 0px -2px, rgb(152, 140, 119) 5px 5px 0px 0px;
   transition: 0.3s all;
 }
-.btn-submit:hover {
+#contato form .flex-formulario .btn-submit:hover {
   box-shadow: rgb(203, 198, 185) 2px 2px 0px -2px, rgb(152, 140, 119) 2px 2px 0px 0px;
 }
 
@@ -269,7 +246,7 @@ footer {
   margin-top: 60px;
   background: #2a2426;
   padding-block: 20px;
-  box-shadow: rgb(42, 36, 38) 0px 0px 0px 10px;
+  box-shadow: #2a2426 0px 0px 0px 10px;
 }
 footer .container {
   display: flex;
